@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "extends": [
+    "plugin:vue/essential",
+    "didafe/vue"
+  ],
+  "rules": {
+    "no-restricted-globals": [
+      "error",
+      "event",
+      "fdescribe"
+    ]
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
