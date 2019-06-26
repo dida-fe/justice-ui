@@ -1,47 +1,5 @@
 <template>
   <demo-section>
-    <demo-block :title="$t('ellipsis')">
-      <div class="van-ellipsis">{{ $t('text') }}</div>
-    </demo-block>
-
-    <demo-block :title="$t('hairline')">
-      <div class="van-hairline--top"/>
-    </demo-block>
-
-    <demo-block :title="$t('animation')">
-      <van-cell
-        is-link
-        title="Fade"
-        @click="animate('van-fade')"
-      />
-      <van-cell
-        is-link
-        title="Slide Up"
-        @click="animate('van-slide-up')"
-      />
-      <van-cell
-        is-link
-        title="Slide Down"
-        @click="animate('van-slide-down')"
-      />
-      <van-cell
-        is-link
-        title="Slide Left"
-        @click="animate('van-slide-left')"
-      />
-      <van-cell
-        is-link
-        title="Slide Right"
-        @click="animate('van-slide-right')"
-      />
-    </demo-block>
-
-    <transition :name="transitionName">
-      <div
-        v-show="show"
-        class="demo-animate-block"
-      />
-    </transition>
   </demo-section>
 </template>
 
@@ -64,7 +22,7 @@
       }
     },
 
-    data () {
+    data() {
       return {
         show: false,
         transitionName: ''
@@ -72,7 +30,7 @@
     },
 
     methods: {
-      animate (transitionName) {
+      animate(transitionName) {
         this.show = true;
         this.transitionName = transitionName;
 

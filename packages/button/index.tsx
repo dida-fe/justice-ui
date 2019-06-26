@@ -69,7 +69,7 @@ function Button(
         square: props.square
       }
     ]),
-    { 'van-hairline--surround': hairline }
+    { 'justice-hairline--surround': hairline }
   ];
 
   function Content() {

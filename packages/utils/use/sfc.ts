@@ -4,7 +4,7 @@
 import '../../locale';
 import { camelize } from '../format/string';
 import { SlotsMixin } from '../../mixins/slots';
-import Vue, { VNode, VueConstructor, ComponentOptions, RenderContext } from 'vue';
+import Vue, { VNode, VueConstructor, ComponentOptions, RenderContext, PluginObject } from 'vue';
 import { DefaultProps, FunctionComponent } from '../types';
 
 export interface VantComponentOptions extends ComponentOptions<Vue> {
@@ -21,9 +21,9 @@ export type TsxBaseProps<Slots> = {
   scopedSlots: Slots;
 };
 
-export type TsxComponent<Props, Events, Slots> = (
-  props: Partial<Props & Events & TsxBaseProps<Slots>>
-) => VNode;
+export interface TsxComponent<Props, Events, Slots> extends PluginObject<any> {
+  (props: Partial<Props & Events & TsxBaseProps<Slots>>): VNode
+}
 
 const arrayProp = {
   type: Array,
@@ -77,7 +77,7 @@ function transformFunctionComponent(pure: FunctionComponent): VantComponentOptio
 }
 
 export function useSFC(name: string) {
-  return function<Props = DefaultProps, Events = {}, Slots = {}> (
+  return function <Props = DefaultProps, Events = {}, Slots = {}>(
     sfc: VantComponentOptions | FunctionComponent
   ): TsxComponent<Props, Events, Slots> {
     if (typeof sfc === 'function') {

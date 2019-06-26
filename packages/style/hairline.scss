@@ -1,14 +1,14 @@
 @import './mixins/hairline';
 
-[class*='van-hairline'] {
+[class*='justice-hairline'] {
   position: relative;
 
   &::after {
-    .hairline();
+    @include hairline;
   }
 }
 
-.van-hairline {
+.justice-hairline {
   &--top::after {
     border-top-width: 1px;
   }

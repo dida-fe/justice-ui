@@ -1,21 +1,26 @@
 {
   "root": true,
   "extends": [
-    "plugin:vue/essential",
-    "didafe/vue"
+    "@vant"
   ],
   "rules": {
-    "no-restricted-globals": [
+    "no-unused-vars": [
       "error",
-      "event",
-      "fdescribe"
-    ]
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "space-before-function-paren": "off"
   },
-  "parserOptions": {
-    "parser": "babel-eslint",
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "jsx": true
+  "overrides": [
+    {
+      "files": [
+        "*.vue"
+      ],
+      "rules": {
+        "indent": "off"
+      }
     }
-  }
+  ]
 }
