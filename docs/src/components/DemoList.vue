@@ -114,14 +114,14 @@ export default {
   top: 24px;
   right: 24px;
   overflow: hidden;
-  color: @blue;
+  color: $blue;
   font-size: 12px;
   cursor: pointer;
 
   span {
     display: inline-block;
     width: 48px;
-    color: @gray-dark;
+    color: $gray-dark;
     line-height: 22px;
     text-align: center;
     background-color: #f7f8fa;
@@ -138,9 +138,9 @@ export default {
     }
 
     &.active {
-      color: @white;
-      background-color: @blue;
-      border-color: @blue;
+      color: $white;
+      background-color: $blue;
+      border-color: $blue;
     }
   }
 }

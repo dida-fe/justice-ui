@@ -13,6 +13,163 @@ export default {
     header: {
       logo: {
         image: 'https://img.yzcdn.cn/vant/logo.png',
+        title: 'JusticeUI',
+        href: '#/'
+      },
+      nav: {
+        lang: {
+          text: 'En',
+          from: 'zh-CN',
+          to: 'en-US'
+        }
+      }
+    },
+    nav: [
+      {
+        name: '开发指南',
+        groups: [
+          {
+            list: [
+              {
+                path: '/intro',
+                title: '介绍'
+              },
+              {
+                path: '/quickstart',
+                title: '快速上手'
+              },
+              {
+                path: '/changelog',
+                title: '更新日志'
+              },
+              {
+                path: '/style',
+                title: '内置样式'
+              },
+              {
+                path: '/theme',
+                title: '定制主题'
+              },
+              {
+                path: '/contribution',
+                title: '开发指南'
+              },
+              {
+                path: '/design',
+                title: '设计资源'
+              },
+              {
+                path: '/style-guide',
+                title: '风格指南'
+              },
+              {
+                path: '/demo',
+                title: '示例页面'
+              },
+              {
+                path: '/locale',
+                title: '国际化'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: '组件',
+        showInMobile: true,
+        groups: [
+          {
+            groupName: '基础组件',
+            icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
+            list: [
+              {
+                path: '/button',
+                title: 'Button 按钮'
+              },
+            ]
+          },
+        ]
+      }
+    ]
+  },
+  'en-US': {
+    header: {
+      logo: {
+        image: 'https://static.didapinche.com/pics/g/gl1zel8nuv/dida_ico.png',
+        title: 'JusticeUI',
+        href: '#/'
+      },
+      nav: {
+        lang: {
+          text: '中文',
+          from: 'en-US',
+          to: 'zh-CN'
+        }
+      }
+    },
+    nav: [
+      {
+        name: 'Essentials',
+        groups: [
+          {
+            list: [
+              {
+                path: '/intro',
+                title: 'Introduction'
+              },
+              {
+                path: '/quickstart',
+                title: 'Quickstart'
+              },
+              {
+                path: '/changelog',
+                title: 'Changelog'
+              },
+              {
+                path: '/style',
+                title: 'Built-in style'
+              },
+              {
+                path: '/theme',
+                title: 'Custom Theme'
+              },
+              {
+                path: '/demo',
+                title: 'Demo pages'
+              },
+              {
+                path: '/locale',
+                title: 'Internationalization'
+              }
+            ]
+          }
+        ],
+      },
+      {
+        name: 'Components',
+        showInMobile: true,
+        groups: [
+          {
+            groupName: 'Basic Components',
+            icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
+            list: [
+              {
+                path: '/button',
+                title: 'Button'
+              },
+            ]
+          },
+        ]
+      }
+    ]
+  },
+}
+
+export const OLD = {
+  'zh-CN': {
+    header: {
+      logo: {
+        image: 'https://img.yzcdn.cn/vant/logo.png',
         title: 'Vant',
         href: '#/'
       },

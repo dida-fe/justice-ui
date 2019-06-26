@@ -5,6 +5,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   mode: 'development',
+  devtool: 'cheap-module-eval-source-map',
   entry: {
     'justiceui-docs': './docs/src/index.js',
     'justiceui-mobile': './docs/src/mobile.js'
@@ -20,7 +21,7 @@ module.exports = {
   },
   devServer: {
     open: true,
-    host: '0.0.0.0',
+    port: 8000,
     stats: 'errors-only',
     clientLogLevel: 'warning'
   },
@@ -48,14 +49,14 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         sideEffects: true,
         use: [
           'style-loader',
           'css-loader',
           'postcss-loader',
           {
-            loader: 'less-loader',
+            loader: 'sass-loader',
             options: {
               paths: [path.resolve(__dirname, 'node_modules')]
             }

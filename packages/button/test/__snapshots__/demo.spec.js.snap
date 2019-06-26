@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div>
+  <div>
+    <div class="demo-button-row"><button class="justice-button justice-button--default justice-button--normal"><span class="justice-button__text">默认按钮</span></button> <button class="justice-button justice-button--primary justice-button--normal"><span class="justice-button__text">主要按钮</span></button> <button class="justice-button justice-button--info justice-button--normal"><span class="justice-button__text">信息按钮</span></button></div> <button class="justice-button justice-button--danger justice-button--normal"><span class="justice-button__text">危险按钮</span></button> <button class="justice-button justice-button--warning justice-button--normal"><span class="justice-button__text">警告按钮</span></button>
+  </div>
+  <div><button class="justice-button justice-button--primary justice-button--normal justice-button--plain"><span class="justice-button__text">朴素按钮</span></button> <button class="justice-button justice-button--danger justice-button--normal justice-button--plain"><span class="justice-button__text">朴素按钮</span></button></div>
+  <div><button class="justice-button justice-button--primary justice-button--normal justice-button--hairline justice-button--plain van-hairline--surround"><span class="justice-button__text">细边框按钮</span></button> <button class="justice-button justice-button--danger justice-button--normal justice-button--hairline justice-button--plain van-hairline--surround"><span class="justice-button__text">细边框按钮</span></button></div>
+  <div><button disabled="disabled" class="justice-button justice-button--primary justice-button--normal justice-button--disabled"><span class="justice-button__text">禁用状态</span></button> <button disabled="disabled" class="justice-button justice-button--danger justice-button--normal justice-button--disabled"><span class="justice-button__text">禁用状态</span></button></div>
+  <div><button class="justice-button justice-button--primary justice-button--normal">
+      <div class="van-loading van-loading--circular justice-button__loading"><span class="van-loading__spinner van-loading__spinner--circular" style="width: 20px; height: 20px;"><svg viewBox="25 25 50 50" class="van-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    </button> <button class="justice-button justice-button--primary justice-button--normal">
+      <div class="van-loading van-loading--spinner justice-button__loading"><span class="van-loading__spinner van-loading__spinner--spinner" style="width: 20px; height: 20px;"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    </button> <button class="justice-button justice-button--danger justice-button--normal">
+      <div class="van-loading van-loading--circular justice-button__loading"><span class="van-loading__spinner van-loading__spinner--circular" style="width: 20px; height: 20px;"><svg viewBox="25 25 50 50" class="van-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div><span class="justice-button__text">加载中...</span>
+    </button></div>
+  <div><button class="justice-button justice-button--primary justice-button--normal justice-button--square"><span class="justice-button__text">方形按钮</span></button> <button class="justice-button justice-button--danger justice-button--normal justice-button--round"><span class="justice-button__text">圆形按钮</span></button></div>
+  <div><button class="justice-button justice-button--primary justice-button--normal"><i class="van-icon van-icon-star-o justice-button__icon">
+        <!----></i></button> <button class="justice-button justice-button--primary justice-button--normal"><i class="van-icon van-icon-star-o justice-button__icon">
+        <!----></i><span class="justice-button__text">按钮</span></button> <button class="justice-button justice-button--primary justice-button--normal justice-button--plain"><i class="van-icon justice-button__icon">
+        <div class="van-image van-icon__image"><img src="https://img.yzcdn.cn/vant/logo.png" class="van-image__img">
+          <div class="van-image__loading"><i class="van-icon van-icon-photo-o" style="font-size: 22px;">
+              <!----></i></div>
+        </div>
+        <!---->
+      </i><span class="justice-button__text">按钮</span></button></div>
+  <div><button class="justice-button justice-button--primary justice-button--large"><span class="justice-button__text">
+      大号按钮
+    </span></button> <button class="justice-button justice-button--primary justice-button--normal"><span class="justice-button__text">
+      普通按钮
+    </span></button> <button class="justice-button justice-button--primary justice-button--small"><span class="justice-button__text">
+      小型按钮
+    </span></button> <button class="justice-button justice-button--primary justice-button--mini"><span class="justice-button__text">
+      迷你按钮
+    </span></button></div>
+</div>
+`;

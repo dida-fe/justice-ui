@@ -111,5 +111,5 @@ components.forEach(component => {
   // css entry
   destEntryFile(component, 'index.js', '.css');
   // less entry
-  destEntryFile(component, 'less.js', '.less');
+  destEntryFile(component, 'scss.js', '.scss');
 });

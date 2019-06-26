@@ -9,6 +9,10 @@ import i18n from './utils/i18n';
 import Vant, { Lazyload, Locale } from '../../packages';
 import { camelize } from '../../packages/utils/format/string';
 
+console.log(Vant);
+console.log(Vant);
+console.log(Vant);
+
 Vue
   .use(Vant)
   .use(VantDoc)

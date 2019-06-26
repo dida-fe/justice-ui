@@ -47,7 +47,12 @@ const registerRoute = ({ mobile, componentMap }) => {
             componentMap[`./${path}/${lang}.md`] ||
             componentMap[`./${path}.${lang}.md`];
 
-          component = module.default;
+          try {
+            component = module.default;
+          } catch (e) {
+            console.log(e);
+            console.error(e);
+          }
         }
 
         if (!component) {

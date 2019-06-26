@@ -1,30 +1,34 @@
 <template>
-  <van-collapse
-    v-model="active"
-    :border="false"
-    class="mobile-nav"
-  >
-    <van-collapse-item
-      class="mobile-nav__item"
-      :title="group.groupName"
-      :name="group.groupName"
-    >
-      <van-icon
-        :name="group.icon"
-        slot="right-icon"
-        class="mobile-nav__icon"
-      />
-      <template v-for="(navItem, index) in group.list">
-        <van-cell
-          v-if="!navItem.disabled"
-          :key="index"
-          :to="'/' + base + navItem.path"
-          :title="navItem.title"
-          is-link
-        />
-      </template>
-    </van-collapse-item>
-  </van-collapse>
+  <div>
+    MobileNav
+    <!--  <van-collapse-->
+    <!--    v-model="active"-->
+    <!--    :border="false"-->
+    <!--    class="mobile-nav"-->
+    <!--  >-->
+    <!--    <van-collapse-item-->
+    <!--      class="mobile-nav__item"-->
+    <!--      :title="group.groupName"-->
+    <!--      :name="group.groupName"-->
+    <!--    >-->
+    <!--      <van-icon-->
+    <!--        :name="group.icon"-->
+    <!--        slot="right-icon"-->
+    <!--        class="mobile-nav__icon"-->
+    <!--      />-->
+    <!--      <template v-for="(navItem, index) in group.list">-->
+    <!--        <van-cell-->
+    <!--          v-if="!navItem.disabled"-->
+    <!--          :key="index"-->
+    <!--          :to="'/' + base + navItem.path"-->
+    <!--          :title="navItem.title"-->
+    <!--          is-link-->
+    <!--        />-->
+    <!--      </template>-->
+    <!--    </van-collapse-item>-->
+    <!--  </van-collapse>-->
+  </div>
+
 </template>
 
 <script>
